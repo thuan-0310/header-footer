@@ -1,0 +1,77 @@
+#main {
+    background-image: url(pizza.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0 auto !important;
+    padding: 90px 110px !important;
+    z-index: 2;
+    min-height: 500px;
+}
+#footer {
+    /* hình nền bg footer.png có lặp lại theo trục x */
+    background-image: url(bg.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    color: white ;
+    font-size: 12px;
+    /* định vị trí cho footer là cố định, cách dưới:0 */
+    /* màu chữ là trång, cỡ chữ 12px */
+    /* độ rộng hiển thị 100%*/
+    width: 100%;
+    /* canh lề trong footer cách trên-dưới: 8px, trái-phải:15px */
+    padding: 8px 15px;
+    /* hiển thị footer theo trục ngang */
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+
+#footer .right-footer {
+    display: flex;
+    width: 500px;
+
+}
+#footer .right-footer ul {
+    display: flex;
+}
+#footer .right-footer ul li {
+
+    border: 1px, red;
+    text-transform: normal;
+    margin: 0, 10px;
+    padding-left: 10px;
+}
+#footer .right-footer ul li a{
+    color: white;
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
+#footer .right-footer ul li a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+#footer .left-footer ul {
+    display: flex;
+}
+#footer .left-footer .item{
+    padding-left: 5px;
+    display: flex;
+
+}
+#footer .left-footer .item a {
+    align-items: center;
+    display: flex;
+    margin: 4px;
+    width: 20px;
+    color: white;
+    height: 8px;
+    font-size: 13px;
+}
+#footer .left-footer {
+    width: 400px;
+}
